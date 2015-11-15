@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">любой логин Github</string>
+    <string name="login">Узнать больше!</string>
+    <string name="info">Введите логин, чтобы узнать больше:</string>
+    <string name="name_is_empty">логин пользователя пуст!</string>
+    <string name="incorrect">логин не существует!</string>
+    <string name="nointernet">отсутствует интернет соединение</string>
+
+    <string name="Username">Логин пользователя:</string>
+    <string name="Followers">Аудитория:</string>
+    <string name="Following">Наблюдают:</string>
+    <string name="saved">сохранено</string>
+
+    <string name="noname">нет имени</string>
+    <string name="nocompany">нет компании</string>
+
+    <string name="followers">аудитория</string>
+    <string name="following">наблюдают</string>
+
+    <string name="language">Язык:</string>
+    <string name="lang">неизвестно</string>
+</resources>

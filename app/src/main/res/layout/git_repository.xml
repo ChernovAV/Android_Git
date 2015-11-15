@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/component"
+        android:layout_above="@+id/repository"
+        android:layout_weight="1">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:id="@+id/photo"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop" />
+
+        <com.danh32.fontify.TextView
+            style="@style/CustomTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Username, company"
+            android:id="@+id/username"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/photo"
+            android:gravity="center"
+            android:paddingTop="15dp" />
+
+        <com.danh32.fontify.TextView
+            style="@style/CustomTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="257\nfollowers "
+            android:id="@+id/followers"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:gravity="center"
+            android:layout_toLeftOf="@+id/photo"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentBottom="false"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="15dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/internet"
+            android:src="@mipmap/planet"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/photo"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/save"
+            android:layout_below="@+id/followers"
+            android:layout_marginTop="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/save"
+            android:src="@mipmap/save"
+            android:background="@null"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/photo"
+            android:paddingBottom="15dp" />
+
+        <com.danh32.fontify.TextView
+            style="@style/CustomTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="143\nfollowing"
+            android:id="@+id/following"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentTop="false"
+            android:layout_toRightOf="@+id/photo"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/username" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/photo"
+            android:layout_below="@+id/following"
+            android:layout_toRightOf="@+id/photo"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/creative"
+            android:background="@null" />
+
+        <com.facebook.share.widget.ShareButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/divo"
+            android:foregroundGravity="left"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/photo"
+            android:layout_toEndOf="@+id/photo"
+            android:layout_above="@+id/save"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/following"
+            android:layout_marginTop="10dp"
+            android:alpha="0" />
+
+        <com.danh32.fontify.TextView
+            style="@style/CustomTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Repository"
+            android:id="@+id/repository"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list"
+        android:layout_weight="1"
+        android:background="@color/backfon">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/android:list"
+            android:layout_below="@+id/repository"
+            android:layout_weight="1" />
+    </FrameLayout>
+
+</LinearLayout>

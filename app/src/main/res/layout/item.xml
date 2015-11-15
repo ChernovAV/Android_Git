@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.danh32.fontify.TextView
+        style="@style/CustomTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Repository name"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:maxLines="1"
+        android:textStyle="bold" />
+
+    <com.danh32.fontify.TextView
+        style="@style/CustomTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/language"
+        android:id="@+id/text"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp" />
+
+    <com.danh32.fontify.TextView
+        style="@style/CustomTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="java"
+        android:id="@+id/language"
+        android:layout_toRightOf="@+id/text"
+        android:layout_alignTop="@+id/text"
+        android:layout_marginLeft="5dp" />
+
+    <com.danh32.fontify.TextView
+        style="@style/CustomTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="115"
+        android:id="@+id/stars"
+        android:layout_toLeftOf="@+id/imageStar"
+        android:layout_centerVertical="true"
+        android:autoText="false" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageStar"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@mipmap/star" />
+
+    <com.danh32.fontify.TextView
+        style="@style/CustomTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="135"
+        android:id="@+id/forks"
+        android:layout_toLeftOf="@+id/image"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+        android:src="@mipmap/action"
+        android:layout_toLeftOf="@+id/imageStar"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+# --table-start--
+dataClass=com.chernov.android.android_git.DataBase.Simple
+tableName=simple
+# --table-fields-start--
+# --field-start--
+fieldName=username
+# --field-end--
+# --field-start--
+fieldName=followers
+# --field-end--
+# --field-start--
+fieldName=following
+# --field-end--
+# --field-start--
+# --table-end--
+#################################

@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Android_GIT</string>
+    <string name="facebook_app_name">Android_GIT</string>
+    <string name="action_settings">Settings</string>
+    <string name="username">some Github username</string>
+    <string name="login">Tell me more!</string>
+    <string name="info">Input username to know more:</string>
+    <string name="name_is_empty">user name is empty!</string>
+    <string name="incorrect">user name does not exist!</string>
+    <string name="nointernet">no internet connect</string>
+    <string name="action_bar">Github Reader</string>
+    <string name="hortensia">fonts/hortensia.ttf</string>
+    <string name="facebook_app_id">1633140893626697</string>
+
+    <string name="restoreName">restoreName</string>
+    <string name="restoreFollowers">restoreFollowers</string>
+    <string name="restoreFollowing">restoreFollowing</string>
+
+    <string name="Username">Username:</string>
+    <string name="Followers">Followers:</string>
+    <string name="Following">Following:</string>
+    <string name="saved">saved</string>
+
+    <string name="noname">noname</string>
+    <string name="nocompany">nocompany</string>
+
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+
+    <string name="language">Language:</string>
+    <string name="lang">unknown</string>
+</resources>

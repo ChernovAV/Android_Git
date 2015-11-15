@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="username">some Github username</string>
+    <string name="login">Tell me more!</string>
+    <string name="info">Input username to know more:</string>
+    <string name="name_is_empty">user name is empty!</string>
+    <string name="incorrect">user name does not exist!</string>
+    <string name="nointernet">no internet connect</string>
+
+    <string name="Username">Username:</string>
+    <string name="Followers">Followers:</string>
+    <string name="Following">Following:</string>
+    <string name="saved">saved</string>
+
+    <string name="noname">noname</string>
+    <string name="nocompany">nocompany</string>
+
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+
+    <string name="language">Language:</string>
+    <string name="lang">unknown</string>
+</resources>
