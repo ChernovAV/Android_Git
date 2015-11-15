@@ -5,23 +5,13 @@
     android:background="@color/colorFon">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/logo1"
         android:src="@mipmap/github"
-        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/github"
         android:layout_toLeftOf="@+id/github"
-        android:layout_toStartOf="@+id/github"
-        android:layout_marginTop="10dp" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/logo2"
-        android:src="@mipmap/github"
-        android:layout_above="@+id/login_username"
-        android:layout_toRightOf="@+id/github"
-        android:layout_toEndOf="@+id/github" />
+        android:layout_toStartOf="@+id/github" />
 
     <com.danh32.fontify.TextView
         style="@style/CustomTextViewStyle"
@@ -47,7 +37,7 @@
         android:layout_alignParentEnd="false"
         android:background="@color/white"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/logo1" />
+        android:layout_above="@+id/enter" />
 
     <Button
         android:id="@+id/enter"
@@ -57,14 +47,14 @@
         android:textSize="18dp"
         android:textColor="@color/white"
         android:background="@color/chat_blue"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentLeft="false"
         android:layout_alignParentStart="false"
-        android:layout_below="@+id/login_username"
         android:textStyle="bold"
         android:singleLine="false"
         android:gravity="center"
         android:layout_marginTop="5dp"
-        android:layout_alignParentBottom="false" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp" />
 
     <com.danh32.fontify.TextView
         style="@style/CustomTextViewStyle"
@@ -75,7 +65,7 @@
         android:id="@+id/github"
         android:gravity="center"
         android:layout_centerHorizontal="true"
-        android:textSize="100dp"
+        android:textSize="90dp"
         android:textColor="@color/white"
         android:shadowColor="@color/chat_blue"
         android:shadowDx="4"
